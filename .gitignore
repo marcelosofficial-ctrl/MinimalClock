@@ -1,0 +1,14 @@
+# Local / generated files
+minimalclock-performance.csv
+dist/
+*.rmskin
+
+# Development-only fonts
+MinimalClock/@Resources/Fonts/*.ttf
+MinimalClock/@Resources/Fonts/*.otf
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

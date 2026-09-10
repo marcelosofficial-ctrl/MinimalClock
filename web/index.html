@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MinimalClock</title>
+  <meta name="description" content="A lightweight, typography-first desktop clock for Rainmeter with a dependency-free web preview.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="white">
+  <main class="stage">
+    <section class="clock" id="clock" aria-label="Current date and time">
+      <div class="time-block">
+        <span class="time" id="hour">00</span>
+        <span class="time" id="minute">00</span>
+        <span class="period" id="period" hidden>AM</span>
+      </div>
+
+      <div class="seconds-block">
+        <span class="seconds" id="second">00</span>
+        <span class="seconds-label">SEC</span>
+      </div>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <div class="date-block">
+        <div class="date-row">
+          <span id="day">MON</span>
+          <span class="date-number" id="date">01</span>
+        </div>
+        <div class="date-row lower">
+          <span id="month">JAN</span>
+          <span class="year" id="year">2026</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="controls" aria-label="Clock preview controls">
+    <button type="button" id="formatButton">24H</button>
+    <button type="button" id="secondsButton" aria-pressed="true">SECONDS ON</button>
+    <button type="button" id="scaleButton">100%</button>
+    <button type="button" id="opacityButton">100%</button>
+    <button type="button" id="themeButton">WHITE</button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
